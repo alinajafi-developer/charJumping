@@ -17,6 +17,3 @@
 - Role - Frontend
 
 - How to reach me : with my [instagram](https://www.instagram.com/alinajafi_web) and [linkedin](https://www.linkedin.com/in/alinajafi79/)
-
-Developed by Ali Najafi
-Date: 2023-Nov-11
