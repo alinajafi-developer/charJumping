@@ -1,0 +1,199 @@
+.borderBox, *, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(90deg, rgb(0, 0, 66), rgb(0, 0, 36));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body > main {
+  width: 300px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+}
+body > main > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+body > main > ul > li {
+  list-style-type: none;
+  flex-grow: 1;
+  height: 100%;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: white;
+  font-size: 40px;
+  position: relative;
+}
+body > main > ul > li > span {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+}
+body > main > ul > li:nth-of-type(1) > span {
+  animation: char1 1s linear infinite;
+}
+body > main > ul > li:nth-of-type(2) > span {
+  animation: char2 1s linear infinite;
+}
+body > main > ul > li:nth-of-type(3) > span {
+  animation: char3 1s linear infinite;
+}
+body > main > ul > li:nth-of-type(4) > span {
+  animation: char4 1s linear infinite;
+}
+body > main > ul > li:nth-of-type(5) > span {
+  animation: char5 1s linear infinite;
+}
+body > main > ul > li:nth-of-type(6) > span {
+  animation: char6 1s linear infinite;
+}
+body > main > ul > li:nth-of-type(7) > span {
+  animation: char7 1s linear infinite;
+}
+body > main > ul > li:nth-of-type(8) > span {
+  animation: char8 1s linear infinite;
+}
+body > main > ul > li:nth-of-type(9) > span {
+  animation: char9 1s linear infinite;
+}
+body > main > ul::after {
+  content: "";
+  display: flex;
+  width: 20px;
+  height: 10px;
+  border-radius: 40px;
+  background-color: teal;
+  position: absolute;
+  bottom: 0;
+  animation: anim 1s linear infinite;
+}
+
+@keyframes anim {
+  0% {
+    transform: translateX(0) scale(0);
+    height: 0;
+  }
+  5% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1);
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    transform: translateX(400px) scale(1);
+    width: 100px;
+    height: 30px;
+  }
+}
+@keyframes char1 {
+  0% {
+    top: 50%;
+  }
+  5% {
+    top: 0;
+  }
+  100% {
+    top: 50%;
+  }
+}
+@keyframes char2 {
+  0% {
+    top: 50%;
+  }
+  20% {
+    top: 0;
+  }
+  100% {
+    top: 50%;
+  }
+}
+@keyframes char3 {
+  0% {
+    top: 50%;
+  }
+  30% {
+    top: 0;
+  }
+  100% {
+    top: 50%;
+  }
+}
+@keyframes char4 {
+  0% {
+    top: 50%;
+  }
+  40% {
+    top: 0;
+  }
+  100% {
+    top: 50%;
+  }
+}
+@keyframes char5 {
+  0% {
+    top: 50%;
+  }
+  45% {
+    top: 0;
+  }
+  100% {
+    top: 50%;
+  }
+}
+@keyframes char6 {
+  0% {
+    top: 50%;
+  }
+  55% {
+    top: 0;
+  }
+  100% {
+    top: 50%;
+  }
+}
+@keyframes char7 {
+  0% {
+    top: 50%;
+  }
+  65% {
+    top: 0;
+  }
+  100% {
+    top: 50%;
+  }
+}
+@keyframes char8 {
+  0% {
+    top: 50%;
+  }
+  75% {
+    top: 0;
+  }
+  100% {
+    top: 50%;
+  }
+}
+@keyframes char9 {
+  0% {
+    top: 50%;
+  }
+  85% {
+    top: 0;
+  }
+  100% {
+    top: 50%;
+  }
+}/*# sourceMappingURL=master.css.map */
